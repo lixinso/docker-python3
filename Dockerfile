@@ -6,4 +6,10 @@ RUN apt install -y vim
 
 RUN pip3 install pandas
 
+RUN mkdir /myworkdir
+VOLUME ["/myworkdir"]
+WORKDIR /myworkdir
+
+COPY ./main.py /tmp/
+
 CMD ["/bin/bash"]
