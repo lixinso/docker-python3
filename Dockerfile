@@ -11,6 +11,6 @@ VOLUME ["/myworkdir"]
 WORKDIR /myworkdir
 
 COPY ./main.py .
-COPY ./algo.py .
+COPY ./second.py .
 
 CMD ["/bin/bash"]
