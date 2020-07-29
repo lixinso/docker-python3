@@ -10,6 +10,7 @@ RUN mkdir /myworkdir
 VOLUME ["/myworkdir"]
 WORKDIR /myworkdir
 
-COPY ./main.py /tmp/
+COPY ./main.py .
+COPY ./algo.py .
 
 CMD ["/bin/bash"]
