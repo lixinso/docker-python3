@@ -4,7 +4,7 @@ RUN apt upgrade -y
 RUN apt install -y wget
 RUN apt install -y vim
 
-RUN pip3 install pandas
+#RUN pip3 install pandas
 
 RUN mkdir /myworkdir
 VOLUME ["/myworkdir"]
